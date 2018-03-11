@@ -1,0 +1,148 @@
+﻿* {
+    /* A universal CSS reset */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    color: #666;
+    background: #111 no-repeat;
+    /* CSS3 Radial Gradients */
+    background-image: -moz-radial-gradient(center -100px 45deg, circle farthest-corner, #444 150px, #111 300px);
+    background-image: -webkit-gradient(radial, 50% 0, 150, 50% 0, 300, from(#444), to(#111));
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navigationMenu li {
+    list-style: none;
+    height: 124px;
+    padding: 2px;
+    width: 125px;
+}
+
+#navigationMenu span {
+    /* Container properties */
+    width: 0;
+    left: 125px;
+    padding: 0;
+    position: absolute;
+    overflow: hidden;
+    /* Text properties */
+    font-family: 'Arvo', 'Times New Roman', serif;
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    white-space: nowrap;
+    line-height: 125px;
+    /* CSS3 Transition: */
+    -webkit-transition: 0.25s;
+    /* Future proofing (these do not work yet): */
+    -moz-transition: 0.25s;
+    transition: 0.25s;
+}
+
+#navigationMenu a {
+    /* The background sprite: */
+    background: url('img/navigation.jpg') no-repeat;
+    height: 125px;
+    width: 125px;
+    display: block;
+    position: fixed;
+}
+
+    /* General hover styles */
+
+    #navigationMenu a:hover span {
+        width: auto;
+        padding: 0 40px;
+        overflow: visible;
+    }
+
+    #navigationMenu a:hover {
+        text-decoration: none;
+        /* CSS outer glow with the box-shadow property */
+        -moz-box-shadow: 0 0 5px #9ddff5;
+        -webkit-box-shadow: 0 0 5px #9ddff5;
+        box-shadow: 0 0 5px #9ddff5;
+    }
+
+/* Green Button */
+
+#navigationMenu .home {
+    background-position: 0 0;
+}
+
+    #navigationMenu .home:hover {
+        background-position: 0 -124px;
+    }
+
+    #navigationMenu .home span {
+        background-color: #1e8bb4;
+        color: #223a44;
+        text-shadow: 1px 1px 0 #44a8d0;
+    }
+
+/* Blue Button */
+
+#navigationMenu .about {
+    background-position: -125px 0;
+}
+
+    #navigationMenu .about:hover {
+        background-position: -125px -125px;
+    }
+
+    #navigationMenu .about span {
+        background-color: #1e8bb4;
+        color: #223a44;
+        text-shadow: 1px 1px 0 #44a8d0;
+    }
+
+/* Orange Button */
+
+#navigationMenu .services {
+    background-position: -250px 0;
+}
+
+    #navigationMenu .services:hover {
+        background-position: -250px -125px;
+    }
+
+    #navigationMenu .services span {
+        background-color: #1e8bb4;
+        color: #223a44;
+        text-shadow: 1px 1px 0 #44a8d0;
+    }
+
+/* Yellow Button */
+
+#navigationMenu .portfolio {
+    background-position: -375px 0;
+}
+
+    #navigationMenu .portfolio:hover {
+        background-position: -375px -125px;
+    }
+
+    #navigationMenu .portfolio span {
+        background-color: #1e8bb4;
+        color: #223a44;
+        text-shadow: 1px 1px 0 #44a8d0;
+    }
+
+/* Purple Button */
+
+#navigationMenu .contact {
+    background-position: -500px 0;
+}
+
+    #navigationMenu .contact:hover {
+        background-position: -500px -125px;
+    }
+
+    #navigationMenu .contact span {
+        background-color: #1e8bb4;
+        color: #223a44;
+        text-shadow: 1px 1px 0 #44a8d0;
+    }
