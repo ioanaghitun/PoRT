@@ -6,12 +6,7 @@
 
 body {
     font-size: 14px;
-    color: #666;
-    background: #111 no-repeat;
-    /* CSS3 Radial Gradients */
-    background-image: -moz-radial-gradient(center -100px 45deg, circle farthest-corner, #444 150px, #111 300px);
-    background-image: -webkit-gradient(radial, 50% 0, 150, 50% 0, 300, from(#444), to(#111));
-    font-family: Arial, Helvetica, sans-serif;
+    background-color:gray;
 }
 
 #navigationMenu li {
