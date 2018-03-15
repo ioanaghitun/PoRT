@@ -1,0 +1,191 @@
+﻿
+body {
+    background-color:gray;
+}
+
+.content{
+	left:20.2vh;
+	top:0;
+	position:absolute;
+	height:1000px;
+	width:89vw;
+	background-color:red;
+}
+
+#navigationMenu li.homeli {
+    list-style: none;
+    height: 19.5vh;
+    width: 19.5vh;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1000;
+}
+#navigationMenu li.mapli {
+    list-style: none;
+    height: 19.5vh;
+    width: 19.5vh;
+	position:absolute;
+	top:20vh;
+	left:0;
+	z-index:1000;
+}
+#navigationMenu li.datali {
+    list-style: none;
+    height: 19.5vh;
+    width: 19.5vh;
+	position:absolute;
+	top:40vh;
+	left:0;
+	z-index:1000;
+}
+#navigationMenu li.addli {
+    list-style: none;
+    height: 19.5vh;
+    width: 19.5vh;
+	position:absolute;
+	top:60vh;
+	left:0;
+	z-index:1000;
+}
+#navigationMenu li.helpli {
+    list-style: none;
+    height: 19.5vh;
+    width: 19.5vh;
+	position:absolute;
+	top:80vh;
+	left:0;
+	z-index:1000;
+}
+
+#navigationMenu span {
+    width: 0;
+    left: 19.5vh;
+    padding: 0;
+    position: absolute;
+    overflow: hidden;
+    font-family: 'Arvo', 'Times New Roman', serif;
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    white-space: nowrap;
+    line-height: 19.5vh;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    transition: 0.25s;
+	z-index:1000;
+}
+
+#navigationMenu a { 
+    height: 19.5vh;
+    width: 9.5vw;
+    display: block;
+    position: fixed;
+	z-index:1000;
+}
+
+
+    #navigationMenu a:hover span {
+        width: auto;
+        padding: 0 50px;
+        overflow: visible;
+		z-index:1000;
+    }
+
+    #navigationMenu a:hover {
+        text-decoration: none;
+        /* CSS outer glow with the box-shadow property */
+        -moz-box-shadow: 0 0 5px #9ddff5;
+        -webkit-box-shadow: 0 0 5px #9ddff5;
+        box-shadow: 0 0 5px #9ddff5;
+		z-index:1000;
+    }
+
+
+#navigationMenu .home {
+    background: url('img/home.png') no-repeat;
+	background-size: cover;
+}
+
+    #navigationMenu .home:hover {
+        background: url('img/home.png') no-repeat;
+		background-size: cover;
+    }
+
+    #navigationMenu .home span {
+        background-color: #1e8bb4;
+        color: #223a44;
+        text-shadow: 1px 1px 0 #44a8d0;
+    }
+
+/* Blue Button */
+
+#navigationMenu .map {
+    background: url('img/map.png') no-repeat;
+	background-size: cover;
+}
+
+    #navigationMenu .map:hover {
+       background: url('img/map.png') no-repeat;
+	   background-size: cover;
+    }
+
+    #navigationMenu .map span {
+        background-color: #1e8bb4;
+        color: #223a44;
+        text-shadow: 1px 1px 0 #44a8d0;
+    }
+
+/* Orange Button */
+
+#navigationMenu .data {
+   background: url('img/date.png') no-repeat;
+   background-size: cover;
+}
+
+    #navigationMenu .data:hover {
+        background: url('img/date.png') no-repeat;
+		background-size: cover;
+    }
+
+    #navigationMenu .data span {
+        background-color: #1e8bb4;
+        color: #223a44;
+        text-shadow: 1px 1px 0 #44a8d0;
+    }
+
+/* Yellow Button */
+
+#navigationMenu .add {
+   background: url('img/add.png') no-repeat;
+   background-size: cover;
+}
+
+    #navigationMenu .add:hover {
+       background: url('img/add.png') no-repeat;
+	   background-size: cover;
+    }
+
+    #navigationMenu .add span {
+        background-color: #1e8bb4;
+        color: #223a44;
+        text-shadow: 1px 1px 0 #44a8d0;
+    }
+
+/* Purple Button */
+
+#navigationMenu .help {
+    background: url('img/help.png') no-repeat;
+	background-size: cover;
+}
+
+    #navigationMenu .help:hover {
+        background: url('img/help.png') no-repeat;
+		background-size: cover;
+    }
+
+    #navigationMenu .help span {
+        background-color: #1e8bb4;
+        color: #223a44;
+        text-shadow: 1px 1px 0 #44a8d0;
+    }
