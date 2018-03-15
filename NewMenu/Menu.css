@@ -4,7 +4,7 @@ body {
 }
 
 .content{
-	left:20.2vh;
+	left:9.8vw;
 	top:0;
 	position:absolute;
 	height:1000px;
@@ -60,7 +60,7 @@ body {
 
 #navigationMenu span {
     width: 0;
-    left: 19.5vh;
+    left: 9.8vw;
     padding: 0;
     position: absolute;
     overflow: hidden;
