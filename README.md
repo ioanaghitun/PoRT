@@ -9,8 +9,8 @@
 
 - Problemele raportate vor putea fi clasificate și reprezentate vizual într-o manieră judicioasă, ca ulterior să poată fi verificate și, eventual, rezolvate de inspectorii de mediu.
 
-- Aplicația va pune la dispoziție rapoarte în formatele HTML, CSV și PDF, iar noile probleme survenite vor fi accesate și via un flux de știri RSS.
+- Aplicația va pune la dispoziție rapoarte în formatele <b>HTML</b>, <b>CSV</b> și <b>PDF</b>, iar noile probleme survenite vor fi accesate și via un flux de știri <b>RSS</b>.
 
 - Lista celor mai importante probleme vizând impactul asupra mediului va putea fi partajată la nivelul rețelelor sociale.
 
-- Bonus: utilizarea unor servicii cartografice precum OpenStreetMap.
+- <b>Bonus:</b> utilizarea unor servicii cartografice precum <b>OpenStreetMap</b>.
