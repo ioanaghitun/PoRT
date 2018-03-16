@@ -7,7 +7,8 @@
 }  
 form {
     background-color: white;
-    border: 2px solid blue;
+    border: 2px solid;
+    border-color: rgb(0,0,50);
     width: 40%;
     margin: auto;
     border-radius: 10px;
@@ -25,18 +26,19 @@ input {
     cursor: pointer;
 }
 input:focus,textarea:focus {
-    border: 2px solid blue;
+    border: 2px solid;
+    border-color: rgb(0,0,50);
 }
 input[type=submit] {
     background-color: white;
-    color: blue;
+    color: rgb(0,0,50);
     margin-bottom: 30px;
     width: 70px;
     padding: 4px;
 }
 input[type=button] {
     background-color: white;
-    color: blue;
+    color: rgb(0,0,50);
     width: 70px;
     padding: 4px;
 }
