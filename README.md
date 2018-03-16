@@ -3,7 +3,7 @@
 
 ## &#128206; Cuprins:
 * [Obiective](#obiective)
-* [Menbrii echipei](#membrii-echipei)
+* [Membrii echipei](#membrii-echipei)
 
 
 ## <a name="obiective"></a> &#9818; Obiective:
