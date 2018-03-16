@@ -20,7 +20,7 @@
 * <b>Bonus:</b> utilizarea unor servicii cartografice precum <b>OpenStreetMap</b>.
 
 
-## <a name="membrii-echipei"></a> &#9819; Menbrii echipei:
+## <a name="membrii-echipei"></a> &#9819; Membrii echipei:
 * Agafiței Andrei: <https://github.com/AgafiteiAndrei>
 * Ghițun Ioana: <https://github.com/ioanaghitun>
 * Schițcu Gabriel-Mihai: <https://github.com/GabrielS5>
