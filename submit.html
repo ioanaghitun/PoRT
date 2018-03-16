@@ -20,6 +20,7 @@
             margin-right: 4px;
             border-radius: 10px;
             padding: 2px 2px;
+            cursor: pointer;
         }
         input:focus,textarea:focus {
             border: 2px solid blue;
@@ -31,23 +32,40 @@
             width: 70px;
             padding: 4px;
         }
+        input[type=button] {
+            background-color: white;
+            color: blue;
+            width: 70px;
+            padding: 4px;
+        }
+        .title {
+            width: 80%;
+            border-radius: 10px;
+            padding: 10px 20px;
+        }
         textarea {
             margin: auto;
             margin-top: 4px;
             margin-right: 4px;
             border-radius: 10px;
             padding: 10px 20px;
-            width: 75%;
+            width: 80%;
             height: 100px;
+            cursor: pointer;
         }
     </style>
   </head>
   <body>
   <form>
     <div class="c1">
-        <strong> Description </strong>
+        <strong> Short description </strong>
         <br>
-        <textarea placeholder="Add your description here..."></textarea>
+        <input class="title" type="text" placeholder="Short description">
+    </div>
+    <div class="c1">
+        <strong> Description in detail</strong>
+        <br>
+        <textarea placeholder="Add your description in detail here..."></textarea>
     </div>
     <div class="c1">
        <strong> Check all the forms of pollution that apply to your case: </strong>
@@ -81,13 +99,9 @@
     <div class="c1">
         <strong> Latitude and longitude of the address: </strong>
         <br>
-        <input type="number" value="latitude" placeholder="Latitude">
-        <input type="radio" name="choselat" value="north"> N
-        <input type="radio" name="choselat" value="south"> S
-        <br>
-        <input type="number" value="longitude" placeholder="Longitude">
-        <input type="radio" name="choselong" value="east"> E
-        <input type="radio" name="choselong" value="west"> W
+        <input type="text" value="latitude" placeholder="Latitude">
+        <input type="text" value="longitude" placeholder="Longitude">
+        <input type="button" value="Update">
     </div>
     <div class="c1">
         <strong> Image(s) of the incident: </strong>
