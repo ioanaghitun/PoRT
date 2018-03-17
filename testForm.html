@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="Menu.css" />
+    <link rel="stylesheet" type="text/css" href="Map.css" />
+	<link rel="stylesheet" type="text/css" href="Form.css" />
+	<script type="text/javascript" src="leaflet/leaflet.js"></script>
+    <link rel="stylesheet"  type="text/css" href="leaflet/leaflet.css" />
+    
+    <style>
+        .menu {
+            grid-area: menu;
+        }
+        .menu2 {
+            grid-area: menu2;
+        }
+        .cont {
+            grid-area: cont;
+        }
+        body {
+            display: grid;
+            grid-gap: 1em;
+            grid-template-areas:
+            "menu2"
+            "cont"
+        }
+        @media only screen and (min-width: 600px)  {
+            .menu2 { 
+                display: none;
+            }
+            body {
+                grid-template-columns: 20% auto;
+                grid-template-areas:
+                "menu  cont cont"
+            }
+        }
+        @media only screen and (min-width: 800px)   {
+            body {
+                grid-gap: 20px;
+                grid-template-columns: 120px auto 120px;
+                grid-template-areas:
+                "menu cont cont cont"
+                max-width: 800px;
+            }
+            .menu2 { 
+                display: none;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <ul id="navigationMenu" class="box menu">
+        <li class="homeli">
+            <a class="home" href="#">
+                <span>Home</span>
+            </a>
+        </li>
+
+        <li class="mapli">
+            <a class="map" href="#">
+                <span>Map</span>
+            </a>
+        </li>
+
+        <li class="datali">
+            <a class="data" href="#">
+                <span>Data</span>
+            </a>
+        </li>
+
+        <li class="addli">
+            <a class="add" href="#">
+                <span>Add</span>
+            </a>
+        </li>
+
+        <li class="helpli">
+            <a class="help" href="#">
+                <span>Help</span>
+            </a>
+        </li>
+    </ul>
+    
+    <table id="navigationMenu2" class="box menu2">
+      <tr>
+        <th class="homeli2">
+            <a class="home2" href="#">
+                <span>Home</span>
+            </a>
+        </th>
+
+        <th class="mapli2">
+            <a class="map2" href="#">
+                <span>Map</span>
+            </a>
+        </th>
+
+        <th class="datali2">
+            <a class="data2" href="#">
+                <span>Data</span>
+            </a>
+        </th>
+
+        <th class="addli2">
+            <a class="add2" href="#">
+                <span>Add</span>
+            </a>
+        </th>
+
+        <th class="helpli2">
+            <a class="help2" href="#">
+                <span>Help</span>
+            </a>
+        </th>
+      </tr>
+    </table>
+
+<div class="content box cont">
+  <form>
+  <div class="c1">
+        <strong> Short description </strong>
+        <br>
+        <input class="title" type="text" placeholder="Short description">
+    </div>
+    <div class="c1">
+        <strong> Description </strong>
+        <br>
+        <textarea placeholder="Add your description here..."></textarea>
+    </div>
+    <div class="c1">
+       <strong> Check all the forms of pollution that apply to your case: </strong>
+       <br>
+       <input type="checkbox" name="category" value="air pollution"> Air pollution
+       <br>
+       <input type="checkbox" name="category" value="light pollution"> Light pollution
+       <br>
+       <input type="checkbox" name="category" value="littering"> Littering
+       <br>
+       <input type="checkbox" name="category" value="noise pollution"> Noise pollution
+       <br>
+       <input type="checkbox" name="category" value="soil contamination"> Soil contamination
+       <br>
+       <input type="checkbox" name="category" value="radioactive contamination"> Radioactive contamination
+       <br>
+       <input type="checkbox" name="category" value="thermal pollution"> Thermal pollution
+       <br>
+       <input type="checkbox" name="category" value="visual pollution"> Visual pollution
+       <br>
+       <input type="checkbox" name="category" value="water pollution"> Water pollution
+       <br>
+       <input type="checkbox" name="category" value="other"> Other
+    </div>
+    <div class="c1">
+        <strong> Date and time of incident: </strong>
+        <br>
+        <input type="date">
+        <input type="time">
+    </div>
+    <div class="c1">
+        <strong> Latitude and longitude of the address: </strong>
+		<div class="coordinates">
+        <br>
+        <input id="latitudine" type="number" value="latitude" placeholder="Latitude">
+        <span class="updateButton"><input id="updateB" type="button" value="Update" onclick="updateMap();"></span>
+        <br>
+        <input id="longitudine" type="number" value="longitude" placeholder="Longitude">
+       <div id="map"></div>
+    </div>
+	</div>
+    <div class="c1">
+        <strong> Image(s) of the incident: </strong>
+        <br>
+        <input type="file" name="fileupload" accept="image/*">
+    </div>
+    <div class="c1">
+        <input type="submit" value="Submit" onclick="alert('Done!')">
+    </div>
+  </form>
+</div>
+<script type="text/javascript" src="Scripts/Map.js"></script>
+</body>
+</html>
