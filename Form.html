@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="Map.css" />
 	<link rel="stylesheet" type="text/css" href="Form.css" />
 	<script type="text/javascript" src="leaflet/leaflet.js"></script>
-    <link rel="stylesheet"  type="text/css" href="leaflet/leaflet.css" />
+    <link rel="stylesheet" type="text/css" href="leaflet/leaflet.css" />
    
 </head>
 <body>
@@ -41,18 +41,19 @@
     </ul>
 
 <div class="content">
-  <form>
-  <div class="c1">
+<form>
+    <ul>
+        <li class="c1">
         <strong> Short description </strong>
         <br>
         <input class="title" type="text" placeholder="Short description">
-    </div>
-    <div class="c1">
+    </li>
+    <li class="c1">
         <strong> Description </strong>
         <br>
         <textarea placeholder="Add your description here..."></textarea>
-    </div>
-    <div class="c1">
+    </li>
+    <li class="c1">
        <strong> Check all the forms of pollution that apply to your case: </strong>
        <br>
        <input type="checkbox" name="category" value="air pollution"> Air pollution
@@ -74,14 +75,14 @@
        <input type="checkbox" name="category" value="water pollution"> Water pollution
        <br>
        <input type="checkbox" name="category" value="other"> Other
-    </div>
-    <div class="c1">
+    </li>
+    <li class="c1">
         <strong> Date and time of incident: </strong>
         <br>
         <input type="date">
         <input type="time">
-    </div>
-    <div class="c1">
+    </li>
+    <li class="c1">
         <strong> Latitude and longitude of the address: </strong>
 		<div class="coordinates">
         <br>
@@ -91,16 +92,16 @@
         <input id="longitudine" type="number" value="longitude" placeholder="Longitude">
         <div id="map"></div>
     </div>
-	</div>
-    <div class="c1">
+	</li>
+    <li class="c1">
         <strong> Image(s) of the incident: </strong>
         <br>
         <input type="file" name="fileupload" accept="image/*">
-    </div>
-    <div class="c1">
+    </li>
+    <li class="c1">
         <input type="submit" value="Submit" onclick="alert('Done!')">
-    </div>
-  </form>
+    </li>
+</form>
 </div>
 <script type="text/javascript" src="Scripts/Map.js"></script>
 </body>
