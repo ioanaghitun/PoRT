@@ -34,6 +34,9 @@ input:focus,textarea:focus {
     border: 2px solid;
     border-color: rgb(0,0,50);
 }
+input[type=date] {
+	width:125px;	
+}
 input[type=submit] {
     background-color: white;
     color: rgb(0,0,50);
