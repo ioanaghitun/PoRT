@@ -1,11 +1,11 @@
-﻿var map = L.map('map').setView([53.00, 9.00], 4);
+var map = L.map('map').setView([53.00, 9.00], 4);
 var lati=document.getElementById("latitudine");
 var long=document.getElementById("longitudine");
 mapLink =
-    '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+    '<a href="http://openstreetmap.org"></a>';
 L.tileLayer(
     'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; ' + mapLink + ' Contributors',
+        attribution: mapLink,
         maxZoom: 20,
     }).addTo(map);
 
