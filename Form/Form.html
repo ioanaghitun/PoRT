@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title> Submit raport </title>
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="Menu.css" />
     <link rel="stylesheet" type="text/css" href="Map.css" />
@@ -13,38 +13,34 @@
 </head>
 <body>
     <ul id="navigationMenu">
-        <li class="homeli">
+        <li>
             <a class="home" href="#">
                 <span>Home</span>
             </a>
         </li>
-
-        <li class="mapli">
+        <li>
             <a class="map" href="#">
                 <span>Map</span>
             </a>
         </li>
-
-        <li class="datali">
+        <li>
             <a class="data" href="#">
                 <span>Data</span>
             </a>
         </li>
-
-        <li class="addli">
+        <li>
             <a class="add" href="#">
                 <span>Add</span>
             </a>
         </li>
-
-        <li class="helpli">
+        <li>
             <a class="help" href="#">
                 <span>Help</span>
             </a>
         </li>
     </ul>
 
-	<div class="content">
+<div class="content">
   <form>
   <div class="c1">
         <strong> Short description </strong>
@@ -89,10 +85,11 @@
         <strong> Latitude and longitude of the address: </strong>
 		<div class="coordinates">
         <br>
-        <input id="latitudine" type="number" value="latitude" placeholder="Latitude"> <span class="updateButton"><input id="updateB" type="button" value="Update" onclick="updateMap();"></span>
+        <input id="latitudine" type="number" value="latitude" placeholder="Latitude">
+        <span class="updateButton"><input id="updateB" type="button" value="Update" onclick="updateMap();"></span>
         <br>
         <input id="longitudine" type="number" value="longitude" placeholder="Longitude">
-       <div id="map"></div>
+        <div id="map"></div>
     </div>
 	</div>
     <div class="c1">
@@ -104,7 +101,7 @@
         <input type="submit" value="Submit" onclick="alert('Done!')">
     </div>
   </form>
-	</div>
-    <script type="text/javascript" src="Scripts/Map.js"></script>
+</div>
+<script type="text/javascript" src="Scripts/Map.js"></script>
 </body>
 </html>
