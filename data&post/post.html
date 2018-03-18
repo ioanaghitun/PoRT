@@ -55,14 +55,15 @@
             <strong>Location of incident:</strong>
             <div class="coordinates">
             <br>
-                <input id="latitudine" type="number" value="latitude" readonly> <i>(latitude)</i>
+                <input id="latitudine" type="number" value="28.538336" readonly> <i>(latitude)</i>
                 <br>
-                <input id="longitudine" type="number" value="longitude" readonly> <i>(longitude)</i>
-                <div id="map"></div>
+                <input id="longitudine" type="number" value="-81.379234" readonly> <i>(longitude)</i>
+                
             </div>
+			<div id="map"></div>
         </li>
         <li class="img">
-            <img width="75%" height="20%" style="border:2px solid rgb(0,0,50); border-radius:10px" alt="imagine" src="img/testImage.jpg">
+            <img width="95%" height="20%" style="border:2px solid rgb(0,0,50); border-radius:10px" alt="imagine" src="img/testImage.jpg">
         </li>
         <li>
             <ul class="tag">
@@ -75,5 +76,6 @@
     </ul>
     </div>
     <script type="text/javascript" src="Scripts/Map.js"></script>
+	<script> addMarker(); updateMap();</script>
 </body>
 </html>
