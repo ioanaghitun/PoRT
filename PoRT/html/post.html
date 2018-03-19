@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Post</title>
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/menu.css" />
+    <link rel="stylesheet" type="text/css" href="../css/smallMap.css" />
+    <link rel="stylesheet" type="text/css" href="../css/post.css" />
+    <script type="text/javascript" src="../leaflet/leaflet.js"></script>
+    <link rel="stylesheet" type="text/css" href="../leaflet/leaflet.css" />
+</head>
+<body>
+     <nav>
+    <ul id="navigationMenu">
+        <li>
+            <a class="home" href="../index.html">
+                <span>Home</span>
+            </a>
+        </li>
+        <li>
+            <a class="map" href="../html/map.html">
+                <span>Map</span>
+            </a>
+        </li>
+        <li>
+            <a class="data" href="../html/data.html">
+                <span>Data</span>
+            </a>
+        </li>
+        <li>
+            <a class="add" href="../html/form.html">
+                <span>Add</span>
+            </a>
+        </li>
+        <li>
+            <a class="help" href="../html/help.html">
+                <span>Help</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+    
+    <div class="content">
+    <ul class="post">
+        <li class="title">
+            50 GALLONS OF DIESEL FUEL DISCHARGED FROM A LIGHT POST THAT FELL OVER DURING HURRICANE MARIA
+        </li>
+        <li>
+            The caller is reporting that while making the initial after hurricane assessment they observed a sheen contained within a tank dyke. Additionally the caller is reporting that a large above ground storage tank collapsed, but it is an out of service tank so there is no release. The caller states that they have only accounted for some of the employees at this point, but have not received reports of injuries yet. 50 gallons of diesel fuel discharged from a light post that fell over during Hurricane Maria which sheared off a pressure relief line within the tank dyke.
+        </li>
+        <li>
+           <strong> Date and time of incident: </strong>
+           21-09-2017, 2:30 PM
+        </li>
+        <li class="loc">
+            <strong>Location of incident:</strong>
+            <div class="coordinates">
+            <br>
+                <input id="latitudine" type="number" value="28.538336" readonly> <i>(latitude)</i>
+                <br>
+                <input id="longitudine" type="number" value="-81.379234" readonly> <i>(longitude)</i>
+                
+            </div>
+			<div id="map"></div>
+        </li>
+        <li class="img">
+            <img  style="border:2px solid rgb(0,0,50); border-radius:10px; width:35vw; height:50vh;" alt="imagine" src="../img/testImage.jpg">
+        </li>
+	<li>
+             <a href="http://www.facebook.com/sharer.php?u=link" target="_blank">
+                 <img src="../img/facebook.png" alt="Facebook" />
+              </a>
+ 
+              <a href="https://twitter.com/share?url=link" target="_blank">
+                  <img src="../img/twitter.png" alt="Twitter" />
+               </a>
+
+          </li>
+        <li>
+            <ul class="tag">
+                <li id="tagList">tags:</li>
+                <li>air pollution,</li>
+                <li>soil contamination,</li>
+                <li>other</li>
+            </ul>
+        </li>
+    </ul>
+    </div>
+    <script type="text/javascript" src="../scripts/map.js"></script>
+	<script> addMarker(); updateMap();</script>
+</body>
+</html>
