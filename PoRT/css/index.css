@@ -51,10 +51,6 @@ right:5%;
 .share-buttons a:last-child{
 right:20%;
 }	
-.content{
-
-	width:70vw;	
-}
 }
 
 @media only screen and  (min-width:501px) and (max-width:700px) {
@@ -98,10 +94,6 @@ right:5%;
 }
 .share-buttons a:last-child{
 right:14%;
-}
-.content{
-
-	width:85vw;	
 }
 	}
 	
@@ -147,10 +139,6 @@ right:5%;
 .share-buttons a:last-child{
 right:12%;
 }
-.content{
-
-	width:90vw;	
-}
 
 	}
 	
@@ -195,10 +183,6 @@ right:5%;
 }
 .share-buttons a:last-child{
 right:12%;
-}
-.content{
-
-	width:89vw;	
 }
 	}
 
@@ -258,11 +242,11 @@ img{
 	
 }
 .share-buttons a:first-child{
-top:0px;
+top:10px;
 position:absolute;
 }
 .share-buttons a:last-child{
-top:0px;
+top:10px;
 position:absolute;
 }
 .share-buttons img{
