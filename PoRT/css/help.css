@@ -4,6 +4,9 @@
 	font-size:50px;
 	padding-left:15px;
 	}
+	.lista_contact{
+    font-size:20px;
+	padding-left:60px;}
 	
 h1{ padding-left:10px; }
 h2{ padding-left:15px; }
@@ -35,6 +38,10 @@ td p{
 	font-size:40px;
 	padding-left:13px;
 	}
+	
+	.lista_contact{
+    font-size:27px;
+	padding-left:50px;}
 	
 h1{ padding-left:8px; }
 h2{ padding-left:13px; }
@@ -68,6 +75,10 @@ td p{
 	font-size:36px;
 	padding-left:11px;
 	}
+	
+	.lista_contact{
+    font-size:15px;
+	padding-left:45px;}
 	
 h1{ padding-left:7px; }
 h2{ padding-left:11px; }
@@ -110,6 +121,10 @@ td p{
 	font-size:25px;
 	padding-left:11px;
 	}
+	.lista_contact{
+    font-size:14px;
+	padding-left:30px;}
+	
 }
 
 
@@ -154,7 +169,5 @@ table tr:nth-of-type(even) {
   background:rgb(27,38,65);
  }
 .lista_contact{
-    font-size:20px;
     color:white;
-    padding-left:60px;
 }
