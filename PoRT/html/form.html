@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -46,14 +46,14 @@
 <form>
     <ul>
         <li class="c1">
-            <strong> Short description </strong>
+            <strong> Short description: </strong>
             <br>
-            <input class="title" type="text" placeholder="Short description">
+            <input class="title" type="text" placeholder="Short description" required>
         </li>
         <li class="c1">
-            <strong> Description </strong>
+            <strong> Description: </strong>
             <br>
-            <textarea placeholder="Add your description here..."></textarea>
+            <textarea placeholder="Add your description here..." required></textarea>
         </li>
         <li class="c1">
             <strong> Check all the forms of pollution that apply to your case: </strong>
@@ -81,17 +81,17 @@
         <li class="c1">
             <strong> Date and time of incident: </strong>
             <br>
-            <input type="date">
-            <input type="time">
+            <input type="date" required>
+            <input type="time" required>
         </li>
         <li class="c1">
             <strong> Latitude and longitude of the address: </strong><br>
                 <div class="coordinates">
-                    <input id="latitudine" type="number" placeholder="Latitude">
+                    <input id="latitudine" type="number" placeholder="Latitude" required>
                     <span class="updateButton">
                         <input id="updateB" type="button" value="Update" onclick="updateMap();">
                     </span><br>
-                    <input id="longitudine" type="number" placeholder="Longitude">
+                    <input id="longitudine" type="number" placeholder="Longitude" required>
                     <div id="map"></div>
                 </div>
         </li>
@@ -99,6 +99,11 @@
             <strong> Image(s) of the incident: </strong>
             <br>
             <input type="file" name="fileupload" accept="image/*">
+        </li>
+        <li class="c1">
+            <strong> E-mail address to confirm the validity of the data sent: </strong>
+            <br>
+            <input type="email" name="email" placeholder="name@gmail.com" required>
         </li>
         <li class="c1">
             <input type="submit" value="Submit" onclick="alert('Done!')">
