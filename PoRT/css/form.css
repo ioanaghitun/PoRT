@@ -10,7 +10,7 @@ ul {
 }
 form {
     background-color: white;
-    border: 2px solid;
+    border: 3px solid;
     border-color: rgb(0,0,50);
     width: 40%;
     margin: auto;
@@ -38,17 +38,22 @@ input[type=date] {
     width:125px;
 }
 input[type=submit] {
+    font-weight: bold;
     background-color: white;
     color: rgb(0,0,50);
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     width: 70px;
     padding: 4px;
 }
 input[type=button] {
+    font-weight: bold;
     background-color: white;
     color: rgb(0,0,50);
     width: 70px;
     padding: 4px;
+}
+input[type=submit]:hover,input[type=button]:hover {
+    background-color: lightblue;
 }
 .title {
     width: 70%;
