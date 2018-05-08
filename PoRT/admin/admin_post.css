@@ -40,228 +40,24 @@ ul {
 @media only screen and (min-width: 1001px) and (max-width:1200px) {
     #dataList {
         width: 50%;
-        margin-left: 20%;
+        margin-left: 30%;
     }
 }
 @media only screen and (min-width: 721px) and (max-width:1000px) {
     #dataList {
         width: 55%;
-        margin-left: 15%;
+        margin-left: 30%;
     }
 }
 @media only screen and (min-width: 521px) and (max-width:720px) {
     #dataList {
         width: 60%;
-        margin-left: 10%;
+        margin-left: 20%;
     }
 }
 @media only screen and (max-width:520px) {
     #dataList {
         width: 60%;
-        margin-left: 5%;
+        margin-left: 20%;
     }
-}
-#navigationMenu li {
-	padding-bottom:4px;
-	height: 8vw;
-    width: 8vw;
-	}
-
-
-	.content{
-	left:8vw;
-	width:90.8vw;
-    }
-	
-	#navigationMenu a { 
-    height: 8vw;
-    width: 8vw;
-    }
-	
-	#navigationMenu span {
-		left: 8vw;
-        line-height: 8vw;
-		font-size: 21px;
-	}
-	
-	#navigationMenu a:hover span {
-		  padding: 0 50px;
-	 }
-	}
-	
-#navigationMenu span {
-    width: 0;
-    padding: 0;
-    position: absolute;
-    overflow: hidden;
-    font-family: 'Arvo', 'Times New Roman', serif;
-    font-weight: bold;
-    letter-spacing: 0.6px;
-    white-space: nowrap;
-    -webkit-transition: 0.25s;
-    -moz-transition: 0.25s;
-    transition: 0.25s;
-	z-index:1000;
-}
-
-#navigationMenu a { 
-    display: block;
-    position: fixed;
-	z-index:1000;
-}
-
-#navigationMenu a:hover span {
-        width: auto;
-        overflow: visible;
-		z-index:1000;
-    }
-
-    #navigationMenu a:hover {
-        text-decoration: none;
-        -moz-box-shadow: 0 0 5px #9ddff5;
-        -webkit-box-shadow: 0 0 5px #9ddff5;
-        box-shadow: 0 0 5px #9ddff5;
-		z-index:1000;
-    }
-
-#navigationMenu .home {
-    background: url("../img/home.png") no-repeat;
-	background-size: cover;
-	border-bottom: 3px solid gray;
-	border-right:3px solid gray;
-}
-
-    #navigationMenu .home:hover {
-        background: url("../img/home.png") no-repeat;
-		background-size: cover;
-    }
-
-    #navigationMenu .home span {
-        background-color: #1e8bb4;
-        color: #223a44;
-        text-shadow: 1px 1px 0 #44a8d0;
-    }
-
-#navigationMenu .map {
-    background: url("../img/map.png") no-repeat;
-	background-size: cover;
-	border-bottom: 3px solid gray;
-	border-right:3px solid gray;
-}
-
-
-#navigationMenu li {
-	padding-bottom:4px;
-	height: 8vw;
-    width: 8vw;
-	}
-
-
-	.content{
-	left:8vw;
-	width:90.8vw;
-    }
-	
-	#navigationMenu a { 
-    height: 8vw;
-    width: 8vw;
-    }
-	
-	#navigationMenu span {
-		left: 8vw;
-        line-height: 8vw;
-		font-size: 21px;
-	}
-	
-	#navigationMenu a:hover span {
-		  padding: 0 50px;
-	 }
-	
-	
-#navigationMenu span {
-    width: 0;
-    padding: 0;
-    position: absolute;
-    overflow: hidden;
-    font-family: 'Arvo', 'Times New Roman', serif;
-    font-weight: bold;
-    letter-spacing: 0.6px;
-    white-space: nowrap;
-    -webkit-transition: 0.25s;
-    -moz-transition: 0.25s;
-    transition: 0.25s;
-	z-index:1000;
-}
-
-#navigationMenu a { 
-    display: block;
-    position: fixed;
-	z-index:1000;
-}
-
-#navigationMenu a:hover span {
-    width: auto;
-    overflow: visible;
-	z-index:1000;
-    }
-
-#navigationMenu a:hover {
-    text-decoration: none;
-    -moz-box-shadow: 0 0 5px #9ddff5;
-    -webkit-box-shadow: 0 0 5px #9ddff5;
-    box-shadow: 0 0 5px #9ddff5;
-	z-index:1000;
-    }
-
-#navigationMenu .unverifiedPost {
-    background: url("../img/unverifiedPost.png") no-repeat;
-	background-size: cover;
-	border-bottom: 3px solid gray;
-	border-right:3px solid gray;
-}
-
-#navigationMenu .unverifiedPost:hover {
-    background: url("../img/unverifiedPost.png") no-repeat;
-	background-size: cover;
-}
-
-#navigationMenu .unverifiedPost span {
-    background-color: #1e8bb4;
-    color: #223a44;
-    text-shadow: 1px 1px 0 #44a8d0;
-}
-	
-	#navigationMenu .verifiedPost{
-    background: url("../img/date.png") no-repeat;
-	background-size: cover;
-	border-bottom: 3px solid gray;
-	border-right:3px solid gray;
-}
-
-#navigationMenu .verifiedPost:hover {
-    background: url("../img/date.png") no-repeat;
-	background-size: cover;
-}
-
-#navigationMenu .verifiedPost span {
-    background-color: #1e8bb4;
-    color: #223a44;
-    text-shadow: 1px 1px 0 #44a8d0;
-}
-
-.content{
-	top:0;
-	position:absolute;
-	height:auto;	
-	left:0;
-}
-
-*{
-	margin: 0;
-    padding: 0;
-}
-
-#navigationMenu li {
-    list-style: none;
-	z-index:1000;	
 }
