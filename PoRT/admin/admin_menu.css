@@ -1,0 +1,98 @@
+#navigationMenu li {
+	padding-bottom:4px;
+	height: 8vw;
+    width: 8vw;
+    list-style: none;
+	z-index:1000;
+}
+
+.content{
+	left:8vw;
+	width:90.8vw;
+    top:0;
+	position:absolute;
+	height:auto;	
+	left:0;
+}
+
+#navigationMenu a { 
+    height: 8vw;
+    width: 8vw;
+    display: block;
+    position: fixed;
+	z-index:1000;
+}
+
+#navigationMenu span {
+	left: 8vw;
+    line-height: 8vw;
+	font-size: 21px;
+    width: 0;
+    padding: 0;
+    position: absolute;
+    overflow: hidden;
+    font-family: 'Arvo', 'Times New Roman', serif;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    white-space: nowrap;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    transition: 0.25s;
+	z-index:1000;
+}
+
+#navigationMenu a:hover span {
+    width: auto;
+    overflow: visible;
+	z-index:1000;
+    padding: 0 50px;
+}
+
+#navigationMenu a:hover {
+    text-decoration: none;
+    -moz-box-shadow: 0 0 5px #9ddff5;
+    -webkit-box-shadow: 0 0 5px #9ddff5;
+    box-shadow: 0 0 5px #9ddff5;
+	z-index:1000;
+}
+
+#navigationMenu .unverifiedPost {
+    background: url("../img/unverifiedPost.png") no-repeat;
+	background-size: cover;
+	border-bottom: 3px solid gray;
+	border-right:3px solid gray;
+}
+
+#navigationMenu .unverifiedPost:hover {
+    background: url("../img/unverifiedPost.png") no-repeat;
+	background-size: cover;
+}
+
+#navigationMenu .unverifiedPost span {
+    background-color: #1e8bb4;
+    color: #223a44;
+    text-shadow: 1px 1px 0 #44a8d0;
+}
+
+#navigationMenu .verifiedPost {
+    background: url("../img/date.png") no-repeat;
+	background-size: cover;
+	border-bottom: 3px solid gray;
+	border-right:3px solid gray;
+}
+
+#navigationMenu .verifiedPost:hover {
+    background: url("../img/date.png") no-repeat;
+	background-size: cover;
+}
+
+#navigationMenu .verifiedPost span {
+    background-color: #1e8bb4;
+    color: #223a44;
+    text-shadow: 1px 1px 0 #44a8d0;
+}
+
+* {
+	margin: 0;
+    padding: 0;
+}
