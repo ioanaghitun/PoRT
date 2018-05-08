@@ -4,9 +4,25 @@
     <meta charset="utf-8" />
     <title>Admin data from website</title>
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./css/admin_data.css">
+    <link rel="stylesheet" type="text/css" href="admin_data.css">
+    <link rel="stylesheet" type="text/css" href="admin_menu.css">
 </head>
 <body>
+<nav>
+    <ul id="navigationMenu">
+        <li>
+            <a class="unverifiedPost" href="admin_data.html">
+                <span>Unverified posts</span>
+            </a>
+        </li>
+        <li>
+            <a class="verifiedPost" href="admin_data_posted.html">
+                <span>Verified posts</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<div class="content">
     <ul id="dataList">		
         <li class="raport">
         <ul>
@@ -29,7 +45,7 @@
                 </ul>
             </li>
             <li class="buttons">
-                <img class="shortcut" src="./img/mark-bad.jpg" alt="decline">
+                <img class="shortcut" src="../img/mark-bad.jpg" alt="decline">
             </li>
         </ul>
         </li>
@@ -52,7 +68,7 @@
                 </ul>
             </li>
             <li class="buttons">
-                <img class="shortcut" src="./img/mark-bad.jpg" alt="decline">
+                <img class="shortcut" src="../img/mark-bad.jpg" alt="decline">
             </li>
         </ul>
         </li>
@@ -76,10 +92,11 @@
                 </ul>
             </li>
             <li class="buttons">
-                <img class="shortcut" src="./img/mark-bad.jpg" alt="decline">
+                <img class="shortcut" src="../img/mark-bad.jpg" alt="decline">
             </li>
         </ul>
         </li>
     </ul>
+</div>
 </body>
 </html>
