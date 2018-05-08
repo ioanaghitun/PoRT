@@ -5,27 +5,27 @@
     <title>Admin post checker</title>
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="admin_post.css">
-    <link rel="stylesheet" type="text/css" href="smallMap.css">
-    <script src="./leaflet/leaflet.js"></script>
-    <link rel="stylesheet" type="text/css" href="./leaflet/leaflet.css">
+    <link rel="stylesheet" type="text/css" href="admin_menu.css">
+    <link rel="stylesheet" type="text/css" href="../css/smallMap.css">
+    <script src="../leaflet/leaflet.js"></script>
+    <link rel="stylesheet" type="text/css" href="../leaflet/leaflet.css">
 </head>
 <body>
-
 <nav class="content">
     <ul id="navigationMenu">
         <li>
-            <a class="unverifiedPost" href="#">
+            <a class="unverifiedPost" href="admin_data.html">
                 <span>Unverified posts</span>
             </a>
         </li>
         <li>
-            <a class="verifiedPost" href="#">
+            <a class="verifiedPost" href="admin_data_posted.html"">
                 <span>Verified posts</span>
             </a>
         </li>
     </ul>
 </nav>
-
+<div class="content">
     <ul class="raport">
         <li>
             <h3 class="title">50 GALLONS OF DIESEL FUEL DISCHARGED FROM A LIGHT POST THAT FELL OVER DURING HURRICANE MARIA</h3>
@@ -62,11 +62,12 @@
             </ul>
         </li>
         <li class="buttons">
-            <img class="shortcut" src="mark-ban.png" alt="ban">
-            <img class="shortcut" src="mark-bad.jpg" alt="decline">
-            <img class="shortcut" src="mark-good.jpg" alt="accept">
+            <img class="shortcut" src="../img/mark-ban.png" alt="ban">
+            <img class="shortcut" src="../img/mark-bad.jpg" alt="decline">
+            <img class="shortcut" src="../img/mark-good.jpg" alt="accept">
         </li>
     </ul>
-<script src="./scripts/Map.js"></script>
+</div>
+<script src="../scripts/Map.js"></script>
 </body>
 </html>
