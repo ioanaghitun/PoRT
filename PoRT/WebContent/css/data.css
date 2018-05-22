@@ -1,0 +1,118 @@
+#choseTag {
+	margin: auto;
+}
+
+#choseTag li {
+	display: inline;
+}
+
+.content #choseTag, #dataList {
+	margin-left: 30%;
+}
+
+input, select {
+	border-color: rgb(0, 0, 50);
+	border: 3px solid;
+	margin-top: 15px;
+	border-radius: 10px;
+	cursor: pointer;
+	font-weight: bold;
+	background-color: white;
+	color: rgb(0, 0, 50);
+	padding: 4px;
+}
+
+select {
+	margin-left: auto;
+}
+
+input {
+	margin-left: 10px;
+	width: 70px;
+}
+
+input:hover, select:hover {
+	background-color: lightblue;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	color: blue;
+}
+
+.title {
+	border-color: rgb(0, 0, 50);
+	border-bottom: 2px solid;
+	padding: 1px 1px;
+}
+
+.tag {
+	border-color: rgb(0, 0, 50);
+	border-top: 2px solid;
+}
+
+.tag li {
+	display: inline;
+}
+
+ul {
+	list-style-type: none;
+}
+
+#dataList {
+	width: 40%;
+	margin: auto;
+}
+
+.raport {
+	background-color: white;
+	border-color: rgb(0, 0, 50);
+	border-left: 7px solid;
+	padding: 2% 5%;
+	margin: 5% 0%;
+	border-radius: 10px;
+}
+
+.raport p {
+	margin: 20px 0px;
+}
+
+@media only screen and (min-width: 1001px) and (max-width:1200px) {
+	.content #choseTag, #dataList {
+		margin-left: 20%;
+	}
+	#dataList {
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width: 721px) and (max-width:1000px) {
+	.content #choseTag, #dataList {
+		margin-left: 15%;
+	}
+	#dataList {
+		width: 55%;
+	}
+}
+
+@media only screen and (min-width: 521px) and (max-width:720px) {
+	.content #choseTag, #dataList {
+		margin-left: 10%;
+	}
+	#dataList {
+		width: 60%;
+	}
+}
+
+@media only screen and (max-width:520px) {
+	.content #choseTag, #dataList {
+		margin-left: 5%;
+	}
+	#dataList {
+		width: 60%;
+	}
+}

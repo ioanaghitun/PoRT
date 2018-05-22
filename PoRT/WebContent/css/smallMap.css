@@ -1,0 +1,10 @@
+#map {
+	height: 40vh;
+	width: 35vw;
+	position: relative;
+	left: 0px;
+	top: 2vh;
+	background-color: white;
+	border: 2px solid rgb(27, 38, 65);
+	border-radius: 10px;
+}
