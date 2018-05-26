@@ -2,23 +2,15 @@
 	position: absolute;
 	top: 4.2vh;
 }
-
-#erori{
-	font-color: white;
-	backgroung-color: green;
-}
-
 .coordinates {
 	position: relative;
 }
-
 ul {
 	list-style-type: none;
 }
-
 .wholeForm{
 	background-color: white;
-	border: 3px solid;
+	border: 4px solid;
 	border-color: rgb(0, 0, 50);
 	width: 40%;
 	margin: auto;
@@ -26,15 +18,16 @@ ul {
 	margin-bottom: 4%;
 	border-radius: 10px;
 }
-
-
-
 .c1 {
 	margin-left: 12%;
 	margin-top: 10%;
 	margin-right: 0px;
 }
-
+.c2 {
+	margin-left: 12%;
+	margin-top: 3%;
+	margin-right: 0px;
+}
 input {
 	margin-top: 6px;
 	margin-right: 4px;
@@ -42,43 +35,46 @@ input {
 	padding: 2px 2px;
 	cursor: pointer;
 }
-
-input:focus, textarea:focus {
+input:focus, textarea:focus, button:focus {
 	border: 2px solid;
 	border-color: rgb(0, 0, 50);
 }
-
 input[type=date] {
 	width: 125px;
 }
-
 input[type=submit] {
 	font-weight: bold;
 	background-color: white;
 	color: rgb(0, 0, 50);
-	margin-bottom: 40px;
+	margin-bottom: 0px;
 	width: 70px;
 	padding: 4px;
 }
-
-input[type=button] {
+button {
+	font-weight: bold;
+	background-color: white;
+	color: rgb(0, 0, 50);
+	padding: 4px;
+	width: 70px;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+input[type=button], button {
 	font-weight: bold;
 	background-color: white;
 	color: rgb(0, 0, 50);
 	width: 70px;
 	padding: 4px;
 }
-
-input[type=submit]:hover, input[type=button]:hover {
+input[type=submit]:hover, input[type=button]:hover, button:hover {
 	background-color: lightblue;
 }
-
 .title {
 	width: 70%;
 	border-radius: 10px;
 	padding: 10px 20px;
 }
-
 textarea {
 	margin: auto;
 	margin-top: 4px;
@@ -89,18 +85,15 @@ textarea {
 	height: 100px;
 	cursor: pointer;
 }
-
 #map {
 	width: 80%;
 }
-
 #latitudine, #longitudine {
 	width: 25%;
 	padding: 4px;
 }
-
 @media only screen and (min-width: 1001px) and (max-width:1300px) {
-	form {
+	.wholeForm {
 		width: 55%;
 		margin-top: 3%;
 		margin-bottom: 6%;
@@ -110,17 +103,24 @@ textarea {
 		margin-top: 40px;
 		margin-right: 0px;
 	}
+	.c2 {
+		margin-left: 70px;
+		margin-right: 0px;
+	}
 	input {
 		margin-top: 4px;
 		margin-right: 4px;
 		padding: 2px 2px;
 	}
 	input[type=submit] {
-		margin-bottom: 30px;
 		width: 70px;
 		padding: 4px;
 	}
 	input[type=button] {
+		width: 70px;
+		padding: 4px;
+	}
+	button {
 		width: 70px;
 		padding: 4px;
 	}
@@ -144,9 +144,8 @@ textarea {
 		padding: 4px;
 	}
 }
-
 @media only screen and (min-width: 721px) and (max-width:1000px) {
-	form {
+	.wholeForm {
 		border: 2px solid;
 		width: 70%;
 		margin-left: 13%;
@@ -157,6 +156,10 @@ textarea {
 	.c1 {
 		margin-left: 15%;
 		margin-top: 40px;
+		margin-right: 10%;
+	}
+	.c2 {
+		margin-left: 15%;
 		margin-right: 10%;
 	}
 	input {
@@ -184,9 +187,8 @@ textarea {
 		padding: 2px;
 	}
 }
-
 @media only screen and (min-width: 521px) and (max-width:720px) {
-	form {
+	.wholeForm {
 		border: 3px solid;
 		width: 80%;
 		margin-left: 5%;
@@ -197,6 +199,10 @@ textarea {
 	.c1 {
 		margin-left: 11%;
 		margin-top: 30px;
+		margin-right: 10%;
+	}
+	.c2 {
+		margin-left: 11%;
 		margin-right: 10%;
 	}
 	.title {
@@ -217,9 +223,8 @@ textarea {
 		width: 40%;
 	}
 }
-
 @media only screen and (max-width:520px) {
-	form {
+	.wholeForm {
 		border: 3px solid;
 		width: 70%;
 		margin-left: 10%;
@@ -232,6 +237,10 @@ textarea {
 		margin-top: 25px;
 		margin-right: 10%;
 	}
+	.c2 {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
 	input {
 		margin-top: 3px;
 		margin-right: 2px;
@@ -242,6 +251,10 @@ textarea {
 		padding: 3px;
 	}
 	input[type=button] {
+		width: 60px;
+		padding: 3px;
+	}
+	button {
 		width: 60px;
 		padding: 3px;
 	}

@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/data.css"/>
 </head>
 <body>
- <nav>
+<nav>
     <ul id="navigationMenu">
         <li>
             <a class="home" href="index.html">
@@ -62,7 +62,6 @@
                 		<input type="submit" value="Search" id="SearchB">
             		</span>
         		</li>
-        		<li><a href="http://localhost:8081/PoRT/rss.xml" ><img src="img/rss.png" class="rss"></a></li>
     		</ul>
 		</form>
         <ul id="dataList">
@@ -104,6 +103,7 @@
 				}
 			%>	
 		 </ul>
+	<a href="http://localhost:8081/PoRT/rss.xml"><img src="img/rss.png" class="rss"></a>
     </div>
 </body>
 </html>
