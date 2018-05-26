@@ -15,7 +15,7 @@ import databaseManagement.EntityController;
 public class VerifyHandler extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+	    String raspuns="";
 		String description=request.getParameter("description");
 		String title=request.getParameter("title");
 		String date=request.getParameter("date");
@@ -23,7 +23,6 @@ public class VerifyHandler extends HttpServlet {
 		String longitude=request.getParameter("longitude");
 		String latitude=request.getParameter("latitude");
 		String email=request.getParameter("email");
-		System.out.println(title+date+description+time+longitude+latitude+email);
 		
 		String errorDesc="";
 		String errorTitle="";
@@ -34,41 +33,26 @@ public class VerifyHandler extends HttpServlet {
 		String errorEmail="";
 		
 		if(date.length()==0)
-			errorDate="Introdu Data";
+			raspuns+="\nIntrodu Data";
 		if(time.length()==0)
-			errorLong="Introdu timp";
+			raspuns+="\nIntrodu timp";
 		if(latitude.length()==0)
-			errorLat="Introdu Latitude";
+			raspuns+="\nIntrodu Latitude";
 		if(longitude.length()==0)
-			errorLong="Introdu Longitude";
+			raspuns+="\nIntrodu Longitude";
 		if(title.length()<10)
-			errorTitle="Titlu prea scurt";
+			raspuns+="\nTitlu prea scurt";
 		if(description.length()<50)
-			errorDesc="Descriere prea scurta";
+			raspuns+="\nDescriere prea scurta";
 	    if(email.length()==0) 
-	    	errorEmail="Email lipsa";
+	    	raspuns+="\nEmail lipsa";
 	    else {
 	    EntityController controller = new EntityController();
 		if (controller.checkBanUser(email))
-			  errorEmail="Email banat";
+			  errorEmail="\nEmail banat";
 	    }
-	    String raspuns="";
-	    if(errorDesc !="")
-	    	raspuns=raspuns+"<p>"+errorDesc+"</p>";
-	    if(errorTitle !="")
-	    	raspuns=raspuns+"<p>"+errorTitle+"</p>";
-	    if(errorDate !="")
-	    	raspuns=raspuns+"<p>"+errorDate+"</p>";
-	    if(errorTime !="")
-	    	raspuns=raspuns+"<p>"+errorTime+"</p>";
-	    if(errorLat !="")
-	    	raspuns=raspuns+"<p>"+errorLat+"</p>";
-	    if(errorLong !="")
-	    	raspuns=raspuns+"<p>"+errorLong+"</p>";
-	    if(errorEmail !="")
-	    	raspuns=raspuns+"<p>"+errorEmail+"</p>";
-	    
-	    System.out.println(raspuns);
+	    if(raspuns.equals(""))
+	    	raspuns="Datele sunt corecte";
 	    ServletOutputStream stream=response.getOutputStream();
 	    stream.print(raspuns);
 	    

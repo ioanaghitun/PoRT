@@ -4,8 +4,8 @@
 }
 
 #erori{
-	font-color=white;
-	backgroung-color=green;
+	font-color: white;
+	backgroung-color: green;
 }
 
 .coordinates {
@@ -16,7 +16,7 @@ ul {
 	list-style-type: none;
 }
 
-form {
+.wholeForm{
 	background-color: white;
 	border: 3px solid;
 	border-color: rgb(0, 0, 50);
@@ -26,6 +26,8 @@ form {
 	margin-bottom: 4%;
 	border-radius: 10px;
 }
+
+
 
 .c1 {
 	margin-left: 12%;

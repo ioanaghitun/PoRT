@@ -12,6 +12,7 @@
 	<script src="leaflet/leaflet.js"></script>
     <link rel="stylesheet" type="text/css" href="leaflet/leaflet.css"/>
 </head>
+
 <script>
 function verifica() {
     var title = document.getElementById("title").value;
@@ -25,14 +26,13 @@ function verifica() {
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
-    document.getElementById("erori").innerHTML = this.responseText;
+    alert(this.responseText);
   }
 };
 xhttp.open("POST", "VerifyHandler", true);
 xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 xhttp.send("title="+title+"&description="+description+"&date="+date+"&time="+time+"&latitude="+latitude+"&longitude="+longitude+"&email="+email);
 }
-
 </script>
 
 <body>
@@ -66,6 +66,7 @@ xhttp.send("title="+title+"&description="+description+"&date="+date+"&time="+tim
     	</ul>
 	</nav>
 	<div class="content">
+	<div class="wholeForm">
 	<form action="InsertValidPost">
     	<ul>
         	<li class="c1">
@@ -129,8 +130,9 @@ xhttp.send("title="+title+"&description="+description+"&date="+date+"&time="+tim
     	</ul>
 	</form>
 	<button onclick="verifica()">Verify</button>
-	<div id="erori"><div>
 	</div>
+	</div>
+
 	<script src="scripts/map.js"></script>
 </body>
 </html>
