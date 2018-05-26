@@ -62,6 +62,7 @@
                 		<input type="submit" value="Search" id="SearchB">
             		</span>
         		</li>
+        		<li><a href="http://localhost:8081/PoRT/rss.xml" ><img src="img/rss.png" class="rss"></a></li>
     		</ul>
 		</form>
         <ul id="dataList">

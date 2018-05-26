@@ -12,6 +12,29 @@
 	<script src="leaflet/leaflet.js"></script>
     <link rel="stylesheet" type="text/css" href="leaflet/leaflet.css"/>
 </head>
+<script>
+function verifica() {
+    var title = document.getElementById("title").value;
+    var description = document.getElementById("description").value;
+    var date = document.getElementById("date").value;
+    var time = document.getElementById("time").value;
+    var latitude = document.getElementById("latitudine").value;
+    var longitude = document.getElementById("longitudine").value;
+    var email = document.getElementById("email").value;
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    document.getElementById("erori").innerHTML = this.responseText;
+  }
+};
+xhttp.open("POST", "VerifyHandler", true);
+xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+xhttp.send("title="+title+"&description="+description+"&date="+date+"&time="+time+"&latitude="+latitude+"&longitude="+longitude+"&email="+email);
+}
+
+</script>
+
 <body>
     <nav>
     	<ul id="navigationMenu">
@@ -48,12 +71,12 @@
         	<li class="c1">
             	<strong> Short description: </strong>
             	<br>
-            	<input class="title" type="text" placeholder="Short description" required name="title">
+            	<input id="title" class="title" type="text" placeholder="Short description" required name="title">
         	</li>
         	<li class="c1">
             	<strong> Description: </strong>
             	<br>
-            	<textarea placeholder="Add your description here..." required name="description"></textarea>
+            	<textarea id="description" placeholder="Add your description here..." required name="description"></textarea>
         	</li>
         	<li class="c1">
             	<strong> Check all the forms of pollution that apply to your case: </strong>
@@ -81,8 +104,8 @@
         	<li class="c1">
             	<strong> Date and time of incident: </strong>
             	<br>
-            	<input type="date" required name="date">
-            	<input type="time" required name="time">
+            	<input id="date" type="date" required name="date">
+            	<input id="time" type="time" required name="time">
         	</li>
         	<li class="c1">
             	<strong> Latitude and longitude of the address: </strong><br>
@@ -98,13 +121,15 @@
         	<li class="c1">
             	<strong> E-mail address to confirm the validity of the data sent: </strong>
             	<br>
-            	<input type="email" name="email" placeholder="name@gmail.com" required name="email">
+            	<input id="email" type="email" name="email" placeholder="name@gmail.com" required name="email">
         	</li>
         	<li class="c1">
             	<input type="submit" value="Submit">
         	</li>
     	</ul>
 	</form>
+	<button onclick="verifica()">Verify</button>
+	<div id="erori"><div>
 	</div>
 	<script src="scripts/map.js"></script>
 </body>

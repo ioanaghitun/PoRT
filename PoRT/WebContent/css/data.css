@@ -6,6 +6,13 @@
 	display: inline;
 }
 
+.rss{
+	width: 25px;
+	height: 25px;
+	margin-left : 150px;
+	margin-top : 20px;
+}
+
 .content #choseTag, #dataList {
 	margin-left: 30%;
 }
