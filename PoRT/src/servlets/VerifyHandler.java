@@ -49,10 +49,10 @@ public class VerifyHandler extends HttpServlet {
 	    else {
 	    EntityController controller = new EntityController();
 		if (controller.checkBanUser(email))
-			  errorEmail="\nEmail banat";
+			  errorEmail="\nYour email is banned";
 	    }
 	    if(raspuns.equals(""))
-	    	raspuns="Datele sunt corecte";
+	    	raspuns="Success";
 	    ServletOutputStream stream=response.getOutputStream();
 	    stream.print(raspuns);
 	    
