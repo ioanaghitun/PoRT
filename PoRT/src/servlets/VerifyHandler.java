@@ -35,17 +35,17 @@ public class VerifyHandler extends HttpServlet {
 		if(date.length()==0)
 			raspuns+="\nYou did not enter the date";
 		if(time.length()==0)
-			raspuns+="\nIntrodu timp";
+			raspuns+="\nYou did not enter the time";
 		if(latitude.length()==0)
-			raspuns+="\nIntrodu Latitude";
+			raspuns+="\nYou did not enter the latitude";
 		if(longitude.length()==0)
-			raspuns+="\nIntrodu Longitude";
+			raspuns+="\nYou did not enter the longitude";
 		if(title.length()<10)
-			raspuns+="\nTitlu prea scurt";
+			raspuns+="\nThe title is too short";
 		if(description.length()<50)
-			raspuns+="\nDescriere prea scurta";
+			raspuns+="\nThe description is too short";
 	    if(email.length()==0) 
-	    	raspuns+="\nEmail lipsa";
+	    	raspuns+="\nYou did not enter the email";
 	    else {
 	    EntityController controller = new EntityController();
 		if (controller.checkBanUser(email))
