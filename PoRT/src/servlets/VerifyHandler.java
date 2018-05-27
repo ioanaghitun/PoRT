@@ -33,7 +33,7 @@ public class VerifyHandler extends HttpServlet {
 		String errorEmail="";
 		
 		if(date.length()==0)
-			raspuns+="\nIntrodu Data";
+			raspuns+="\nYou did not enter the date";
 		if(time.length()==0)
 			raspuns+="\nIntrodu timp";
 		if(latitude.length()==0)
