@@ -38,7 +38,7 @@ public class RSSHandler extends HttpServlet {
 		writer.println("<rss version=\"2.0\">");
 		writer.println("<channel>");
 		writer.println("<title>PoRT posts</title>");
-		writer.println("<link>http://localhost:8081/PoRT/index.html</link>");
+		writer.println("<link>http://localhost:8085/PoRT/index.html</link>");
 		writer.println("<description>Disaster posts</description>");
 		writer.println("<language>en-us</language>");
 		
@@ -48,10 +48,9 @@ public class RSSHandler extends HttpServlet {
 			writer.println("<item>");
 			writer.println("<title>"+post.getTitle() +"</title>");
 			writer.println("<description>"+post.getDescription() +"</description>");
-			writer.println("<link>http://localhost:8081/PoRT/post.jsp?index="+post.getId()+"</link>");
+			writer.println("<link>http://localhost:8085/PoRT/post.jsp?index="+post.getId()+"</link>");
 			writer.println("<guid>"+post.getId()+"</guid>");
 			writer.println("</item>");
-			System.out.println("MERE");
 			}	
 		writer.println("</channel>");
 		writer.println("</rss>");

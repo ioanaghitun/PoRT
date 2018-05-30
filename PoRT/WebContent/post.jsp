@@ -83,8 +83,8 @@
             	</ul> 
         	</li>
          	<li>
-            	<a href="http://www.facebook.com/sharer.php?u=link" target="_blank"><img class="shortcut" src="img/facebook.png" alt="Facebook"></a>
-            	<a href="https://twitter.com/share?url=link" target="_blank"><img class="shortcut" src="img/twitter.png" alt="Twitter"></a>
+            	<a href="http://www.facebook.com/sharer.php?u=http://localhost:8081/PoRT/post.jsp?index=<%=post.getId()%>" target="_blank"><img class="shortcut" src="img/facebook.png" alt="Facebook"></a>
+            	<a href="https://twitter.com/share?url=http://localhost:8081/PoRT/post.jsp?index=<%=post.getId()%>" target="_blank"><img class="shortcut" src="img/twitter.png" alt="Twitter"></a>
             	<a href="DownloadHandler?index=<%= post.getId() %>&dType=HTML"><img class="download" src="img/download-html.jpg" alt="Download HTML"></a>
             	<a href="DownloadHandler?index=<%= post.getId() %>&dType=CSV"><img class="download" src="img/download-csv.jpg" alt="Download CSV"></a>
             	<a href="DownloadHandler?index=<%= post.getId() %>&dType=PDF"><img class="download" src="img/download-pdf.png" alt="Download PDF"></a>

@@ -24,7 +24,7 @@ public class EntityController {
             pstmt.setString(8, post.getEmail());
             
             pstmt.executeUpdate();
-        
+        pstmt.close();
             
             	PreparedStatement tagPstmt = connection.prepareStatement("insert into pollution_tags values ( ?, ?)");
             	for(Integer tag : post.getTags()) {
@@ -32,6 +32,7 @@ public class EntityController {
             		tagPstmt.setInt(1,tag);
             		tagPstmt.executeUpdate();
             	}
+            	tagPstmt.close();
          
 	}
 	
@@ -53,10 +54,13 @@ public class EntityController {
 		while(tagRs.next()) {
 			post.addTag(tagRs.getInt(1));
 		}
+		tagStatement.close();
+		statement.close();
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+		
 		
 		
 		return post;
@@ -70,8 +74,12 @@ public class EntityController {
 				statement = connection.createStatement();
 			
 		 rs = statement.executeQuery("select name from pollution_types where id="+id);
-			
-		return rs.next() ? rs.getString(1) : null;
+			String raspuns=null;
+			if(rs.next()) {
+				raspuns=rs.getString(1);
+			}
+			statement.close();
+		return raspuns;
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -87,6 +95,7 @@ public class EntityController {
 			statement = connection.createStatement();
 		
 		ResultSet rs = statement.executeQuery("select * from "+table+" order by id desc");
+		
 		while(rs.next()) {
 			Post post=new Post(rs.getInt(1),rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getFloat(6), rs.getFloat(7), rs.getString(8));
 			Statement tagStatement=connection.createStatement();
@@ -94,8 +103,11 @@ public class EntityController {
 		while(tagRs.next()) {
 			post.addTag(tagRs.getInt(1));
 		}
+		tagStatement.close();
 		result.add(post);
-		}} catch (SQLException e) {
+		}
+		statement.close();
+		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
@@ -107,7 +119,12 @@ public class EntityController {
 		Connection connection=Database.getConnection();
 		Statement statement=connection.createStatement();
 		ResultSet rs = statement.executeQuery("select id_sequence.nextval from dual");
-		return rs.next() ? rs.getInt(1) : 0;
+		int result=0;
+		if(rs.next())
+			result=rs.getInt(1);
+		
+		statement.close();
+		return result;
 		
 	}
 	
@@ -119,6 +136,7 @@ public class EntityController {
             pstmt.executeUpdate();
          pstmt = connection.prepareStatement("delete from pollution_tags where post_id="+id);
             pstmt.executeUpdate();
+            pstmt.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -131,6 +149,7 @@ public class EntityController {
 		try {
 			pstmt = connection.prepareStatement("insert into banned_users values (\'"+email+"\')");
             pstmt.executeUpdate();
+            pstmt.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -147,7 +166,9 @@ public class EntityController {
 		
 		rs=statement.executeQuery("select count(*) from banned_users where email=\'"+email+"\'");
 	    rs.next();
-		return rs.getInt(1)>0 ? true  : false;
+	    int result=rs.getInt(1);
+	    statement.close();
+		return result>0 ? true  : false;
 	} catch (SQLException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
