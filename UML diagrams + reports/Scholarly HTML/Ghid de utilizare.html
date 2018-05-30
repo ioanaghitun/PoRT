@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html  lang="ro-RO" typeof=”http://www.scholarlyhtml.org/“ property="https://github.com/ioanaghitun/PoRT">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Ghid de utilizare</title>
+    <style>ol{ list-style-type: none; }</style>
+</head>
+<body>
+    <header>
+        <h1 property="http://purl.org/dc/terms/title">Pollution-Reporting-Tool: Ghid de utilizare a aplicației</h1>
+        <h3 type=xsd:date>2018-05-30</h3>
+    </header>
+    <div role="contentinfo">
+        <ol role="directory">
+            <li><a href="#introducere">
+                <span>1.</span> Introducere</a>
+            </li>
+            <li><a href="#ghid">
+                <span>2.</span> Mod de utilizare</a>
+                <ol role="directory">
+                    <li><a href="#setup">
+                        <span>2.1</span> Setup</a>
+                    </li>
+                    <li><a href="#utilizare">
+                        <span>2.2</span> Utilizare</a>
+                    </li>
+                </ol>
+            </li>
+            <li><a href="#incheiere">
+                <span>3.</span> Încheiere</a>
+            </li>
+        </ol>
+      <dl>
+        <dt><h3>Autori</h3></dt>
+        <dd property="http://purl.org/dc/terms/creator">
+          <a href="https://github.com/AgafiteiAndrei">Agafiței Andrei</a> (agafiteiandrei97@yahoo.com),
+          <a href="https://github.com/ioanaghitun">Ghițun Ioana</a> (ioana.ghitun@info.uaic.ro),
+          <a href="https://github.com/GabrielS5">Schițcu Gabriel-Mihai</a> (gabriel_schitcu@yahoo.com),
+          <a href="https://github.com/AdrianaUrsachi">Ursachi Adriana-Simona</a> (adriana_ursachi3@yahoo.com).
+        </dd>
+        <dt><h3>Site proiect</h3></dt>
+        <dd>
+            <a href="https://github.com/ioanaghitun/PoRT">GitHub</a>
+        </dd>
+      </dl>
+    </div>
+	<section id="introducere">
+        <h3><span>1.</span> Introducere:</h3>
+        <p>
+            Poluarea reprezintă contaminarea mediului înconjurător cu materiale care interferează cu sănătatea umană, calitatea vieții sau funcția naturală a ecosistemelor (organismele vii și mediul în care trăiesc). Chiar dacă uneori poluarea mediului înconjurător este un rezultat al cauzelor naturale, cum ar fi erupțiile vulcanice, cea mai mare parte a substanțelor poluante provine din activitățile umane. Noi vrem să prevenim și să diminuăm aceste activități prin construirea unei aplicații prin care să se țină evidența acestui tip de activitate.
+        </p>
+	</section>
+    <section id="ghid">
+        <h3><span>2.</span> Mod de utilizare:</h3>
+        <p>
+            Acest ghid vă va ajuta să utilizați cu ușurință aplicația noastră, putând acționa împotriva poluării fără reținere.
+        </p>
+        <section id="setup">
+            <h4><span>2.1</span> Setup:</h4>
+            <ul>
+                <li>
+                    Descărcați și dezarhivați proiectul. După aceea deschideți-l cu un IDE Java la preferința voastră.
+                </li>
+                <li>
+                    Creați o nouă conexiune la baza de date cu username-ul și parola precizată în proiect (sau schimbați manual cele 2 în cod).
+                </li>
+                <li>
+                    Rulați pagina index.html pe server. Aplicația ar trebui să fie, după acest pas, gata de utilizare. 
+                </li>
+            </ul>
+        </section>
+        <section id="utilizare">
+            <h4><span>2.2</span> Utilizare:</h4>
+            <p>
+                Ce fac butoanele din meniu?
+            </p>
+            <p>
+                În meniul principal, din interfața user-ului:
+            </p>
+            <ul>
+                <li>
+                    primul buton redirecționează user-ul către pagina principală a aplicației (index.html);
+                </li>
+                <li>
+                    al doilea buton redirecționează user-ul către o hartă a lumii pe care acesta poate vizualiza toate incidnetele raportate până în prezent;
+                </li>
+                <li>
+                    al treilea buton redirecționează user-ul către o pagină ce conține previzualizări pentru toate incidentele raportate până în prezent, fiecare cu un link către postarea originală;
+                </li>
+                <li>
+                    al patrulea buton redirecționează user-ul către un formular în care acesta poate raporta și detalia un incident legat de poluarea mediului;
+                </li>
+                <li>
+                    al cincilea buton redirecționează user-ul către un ghid al aplicației.
+                </li>
+            </ul>
+            <p>
+                În meniul din interfața admin-ului:
+            </p>
+            <ul>
+                <li>
+                    primul buton redirecționează admin-ul către o listă cu toate postările care în așteptarea confirmării, fiecare cu link către postarea în sine;
+                </li>
+                <li>
+                    al doilea buton redirecționează admin-ul către o listă ce conține toate postările validate de către acesta, de asemenea cu link către postarile în întregime.
+                </li>
+            </ul>
+            <p>
+                Alte facilități:
+            </p>
+            <ul>
+                <li>
+                    în lista cu postări există un buton RSS în colțul din dreapta jos al paginii prin intermediul căruia (și al unui RSS reader) userul poate să fie anunțat atunci când pe site apare o nouă postare;
+                </li>
+                <li>
+                    de asemenea, atât în lista cu postări cât și în pagina cu reprezentarea lor pe hartă, există un meniu prin care userul poate alege o sortare a postărilor după taguri;
+                </li>
+                <li>
+                    într-o postare sunt butoane de download și partajare a acesteia la nivelul rețelelor sociale;
+                </li>
+                <li>
+                    adminul are butoane de accept, stergere sau banare-user pentru fiecare postare;
+                </li>
+                <li>
+                    prin apăsarea ultimului buton din formular, se verifică daca datele introduse sunt corecte, user-ul primind un mesaj cu rezultatul operației. 
+                </li>
+            </ul>
+        </section>
+    </section>
+    <section id="incheiere">
+        <h3><span>3.</span> Încheiere:</h3>
+        <p>
+            Ceea ce se întâmplă astăzi cu planeta noastră ar trebui să ne îngrijoreze. Nivelul de poluare crește treptat, despăduririle sunt greu de controlat și încălzirea globală ne afectează din ce în ce mai mult. De aceea trebuie să fim atenți și să acționăm acum, în timp ce noi încă mai putem face ceva.
+        </p>
+    </section>
+</body>
+</html>
