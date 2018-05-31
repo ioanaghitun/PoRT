@@ -14,6 +14,11 @@ import databaseManagement.EntityController;
 @WebServlet("/VerifyHandler")
 public class VerifyHandler extends HttpServlet {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	    String raspuns="";
 		String description=request.getParameter("description");
@@ -23,14 +28,6 @@ public class VerifyHandler extends HttpServlet {
 		String longitude=request.getParameter("longitude");
 		String latitude=request.getParameter("latitude");
 		String email=request.getParameter("email");
-		
-		String errorDesc="";
-		String errorTitle="";
-		String errorDate="";
-		String errorTime="";
-		String errorLong="";
-		String errorLat="";
-		String errorEmail="";
 		
 		if(date.length()==0)
 			raspuns+="\nYou did not enter the date";
@@ -49,7 +46,7 @@ public class VerifyHandler extends HttpServlet {
 	    else {
 	    EntityController controller = new EntityController();
 		if (controller.checkBanUser(email))
-			  errorEmail="\nYour email is banned";
+			  raspuns+="\nYour email is banned";
 	    }
 	    if(raspuns.equals(""))
 	    	raspuns="Success";

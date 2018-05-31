@@ -18,6 +18,11 @@ import databaseManagement.EntityController;
 @WebServlet("/AcceptHandler")
 public class AcceptHandler extends HttpServlet {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		EntityController controller = new EntityController();
@@ -30,6 +35,6 @@ public class AcceptHandler extends HttpServlet {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		response.sendRedirect("RSSHandler");
+		response.sendRedirect("RSSHandler?where=notPosted");
 	}
 }

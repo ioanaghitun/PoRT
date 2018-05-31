@@ -16,6 +16,11 @@ import databaseManagement.EntityController;
 @WebServlet("/BanHandler")
 public class BanHandler extends HttpServlet {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 

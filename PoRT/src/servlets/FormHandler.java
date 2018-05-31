@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import Data.FileCreator;
+
 import Data.Post;
 import Data.PostTranslater;
 import databaseManagement.EntityController;
@@ -19,6 +19,11 @@ import databaseManagement.EntityController;
  */
 @WebServlet("/InsertValidPost")
 public class FormHandler extends HttpServlet {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {

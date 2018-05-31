@@ -10,18 +10,28 @@ import com.lowagie.text.DocumentException;
 import com.lowagie.text.Paragraph;
 import com.lowagie.text.pdf.PdfWriter;
 
+import databaseManagement.EntityController;
+
 public class FileCreator {
 
 	public String createCSV(Post post) {
 
 		PrintWriter writer;
+		EntityController controller= new EntityController();
 		String filePath = "post" + post.getId() + ".csv";
 		try {
 			writer = new PrintWriter(filePath, "UTF-8");
 			writer.println("Id,Title,Description,Incident Date,Publish Date,Latitude,Longitude,Email,Tags");
-			writer.println(post.getId() + ",\"" + post.getTitle() + "\",\"" + post.getDescription() + "\","
+			
+			String info = post.getId() + ",\"" + post.getTitle() + "\",\"" + post.getDescription() + "\","
 					+ post.getIncidentDate() + "," + post.getPublishDate() + "," + post.getLatitude() + ","
-					+ post.getLongitude() + "," + post.getEmail() + ",\"" + post.getTags() + "\"");
+					+ post.getLongitude() + "," + post.getEmail() + ",\"" ;
+			for(Integer integer : post.getTags()) {
+				info+=controller.getTagName(integer)+", ";
+			}
+			info+="\"";
+			
+			writer.println(info);
 			writer.close();
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -47,7 +57,7 @@ public class FileCreator {
 			writer.println("<p>Titlu: " + post.getTitle() + "</p>");
 			writer.println("<p>Descriere: " + post.getDescription() + "</p>");
 			writer.println("<p>Data incident: " + post.getIncidentDate() + "</p>");
-			writer.println("<p>Data publicarii: " + post.getIncidentDate() + "</p>");
+			writer.println("<p>Data publicarii: " + post.getPublishDate() + "</p>");
 			writer.println(
 					"<p>Latitudine: " + post.getLatitude() + "     Longitudine: " + post.getLongitude() + "</p>");
 			writer.println("<p>Email: " + post.getEmail() + "</p>");

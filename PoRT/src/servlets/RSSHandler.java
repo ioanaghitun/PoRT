@@ -3,7 +3,10 @@ package servlets;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -18,7 +21,14 @@ import databaseManagement.EntityController;
 @WebServlet("/RSSHandler")
 public class RSSHandler extends HttpServlet {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		String whereTo = request.getParameter("where");
 		
 		String contextPath = getServletContext().getRealPath("/");
 
@@ -52,12 +62,18 @@ public class RSSHandler extends HttpServlet {
 			writer.println("<guid>"+post.getId()+"</guid>");
 			writer.println("</item>");
 			}	
+		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+		Date date = new Date();
+		
+		writer.println("<pubdate>"+dateFormat.format(date)+"</pubdate>");
 		writer.println("</channel>");
 		writer.println("</rss>");
 		writer.close();
 		
-		
-		response.sendRedirect("admin_data.jsp");
+		if(whereTo.equals("posted"))
+		    response.sendRedirect("admin_data_posted.jsp");
+		else
+			response.sendRedirect("admin_data.jsp");
 	}
 
 }

@@ -22,7 +22,7 @@ public class RejectHandler extends HttpServlet {
 		int id = Integer.parseInt(request.getParameter("index"));
 		if (request.getParameter("table").equals("valid")) {
 			controller.deletePost("valid_posts", id);
-			response.sendRedirect("admin_data_posted.jsp");
+			response.sendRedirect("RSSHandler?where=posted");
 		} else {
 			controller.deletePost("unchecked_posts", id);
 			response.sendRedirect("admin_data.jsp");

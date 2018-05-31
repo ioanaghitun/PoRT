@@ -26,7 +26,6 @@ public class SearchHandler extends HttpServlet {
 	}
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		String page = request.getParameter("page");
 		String tag = request.getParameter("search");
 		String next = getUrl(request.getHeader("referer")) + "?tag=" + tag;
 		response.sendRedirect(next);

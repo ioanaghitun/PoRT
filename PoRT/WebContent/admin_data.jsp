@@ -61,7 +61,7 @@
 			<li class="raport">
 				<ul>
 					<li>
-						<a href="admin_post.jsp?index=<%=post.getId()%>"><h3 class="title"><%=post.getTitle()%></h3></a>
+						<h3 class="title"><a href="admin_post.jsp?index=<%=post.getId()%>"><%=post.getTitle()%></a></h3>
 					</li>
 					<li>
 						<p>

@@ -79,9 +79,9 @@
 				if(post.getTags().contains(tag) || tag==0){
 		%>		
             <li class="raport">
-				<a href="post.jsp?index=<%=post.getId()%>">
-                	<h3 class="title"><%=post.getTitle()%></h3>
-				</a>
+			
+                	<h3 class="title"><a href="post.jsp?index=<%=post.getId()%>"><%=post.getTitle()%></a></h3>
+				
                 <p>
                     <%=post.getDescription()%>
                 </p>
